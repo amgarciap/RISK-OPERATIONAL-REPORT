@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALISIS DE RIESGOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+       <section>
+        <header class="page-header">
+            <h1 id="page-title" class="title">HELISTAR - DIRECCIÓN DE SEGURIDAD OPERACIONAL</h1>
+            <h2 id="page-title" class="title">ANALISIS DE RIESGOS PARA LA OPERACIÓN DIARIA DE HELICOPTEROS</h2>
+            
+            <nav>
+                <ul class="main-nav" class="nav">
+                    <li class="main-nav__item"><a href="">Reporte de Helicópteros</a></li>
+                    <li class="main-nav__item"><a href="">Reporte de Aviones</a></li>
+                    <li class="main-nav__item"><a href="">P.R.E</a></li>
+                    <li class="main-nav__item"><a href="">Histórico</a></li>
+                    <li class="main-nav__item"><a href="">Alertas</a></li>
+                    <li class="main-nav__item"><a href="">Boletines</a></li>
+                </ul>
+            </nav>
+        </header>
+        </section>  
+
+        <div>
+        <form action="">
+            <label for="hk" class="form" id="general">
+                <span>MATRICULA</span>
+                <input list="matricula">
+                <datalist id="matricula">
+                    <option value="HK 3731">HK 3731</option>
+                    <option value="GS 500">GS 500</option>
+                </datalist>
+                <!-- <input type="text" name="hk" required> -->
+                <!-- <select name="hk" id="">
+                    <option value="3731">3731</option>
+                    <option value="N5555">5555</option>
+                </select> ESTE SELECT SE USA CUANDO SON POCOS VALORES-->
+            </label>
+            <label for="fecha">
+                <span>FECHA</span>
+                <input type="datetime-local" name="fecha" required>
+            </label>
+            <label for="cliente">
+                <span>CLIENTE</span>
+                <input type="text" name="cliente" required>
+            </label>
+            <label for="base">
+                <span>BASE</span>
+                <input type="text" name="base" required>
+            </label>
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+    <div class="parent">
+        <div class="box" id="one">Titulo</div>
+        <div class="box" id="content">Contenido</div>
+    </div>
+    </main>
+</body>
+</html>

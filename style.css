@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: monospace;
+    text-align: center;
+}
+body{
+    background-image: url("Imagenes/Offshore.jpeg");
+    background-position:unset;
+    background-repeat: no-repeat;
+    background-color:white;
+}
+p{
+    color: blue;
+    font-family: 'Lucida Sans';
+    font-variant: inherit;
+}
+
+.main-nav{
+font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem; 
+  list-style: none;
+  padding-left: 0rem;
+  text-align: center;
+}
+.version{
+    display: inline-block;
+    padding: 2rem;;
+}
+.main-nav__item{
+    display: inline-block;
+}
+.main-nav__item a{
+    color: white;
+    background-color: #13a4a4;
+    padding: 1rem;
+    border-radius: 0rem;
+    text-decoration: none;
+}
+.form {
+    border-radius: 0.5rem;
+    display: inline-block;
+    background-color: blue;
+}
+
+
+
+.parent {
+    border: 0.2rem black dotted;
+    display: inline-block;
+}
+#one {
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    position:sticky;
+    top: 20px;
+}
+#content {
+    width: 300px;
+    height: 400px;
+    background-color: brown;
+    position: absolute;
+
+}
