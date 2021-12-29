@@ -6,18 +6,29 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
-.title {
-    font-size: 3rem;
-    font-family: monospace;
-    text-align: center;
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.brand a {
+    display: inline-block;
+    width: 20rem;
+    height: 10rem;
+    position: relative;
+    bottom: -10px;
+    padding-left: 4rem;
+}
+nav{
+    background-image: url("Imagenes/bg.jpg");
 }
 body{
-    background-image: url("Imagenes/Offshore.jpeg");
-    background-position:unset;
-    background-repeat: no-repeat;
+    
     background-color:white;
+    font-size: 1.6rem;
 }
 p{
     color: blue;
@@ -25,51 +36,57 @@ p{
     font-variant: inherit;
 }
 
-.main-nav{
-font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem; 
-  list-style: none;
-  padding-left: 0rem;
-  text-align: center;
-}
-.version{
-    display: inline-block;
-    padding: 2rem;;
-}
 .main-nav__item{
-    display: inline-block;
+    display:inline-block;
+    position: flex;
+    justify-content: flex-end;
+    padding-left: 10rem;
+    bottom: 10rem;
+
 }
 .main-nav__item a{
     color: white;
-    background-color: #13a4a4;
+    background-color: #0e5fa4;
     padding: 1rem;
-    border-radius: 0rem;
+    border-radius: 1rem;
     text-decoration: none;
 }
 .form {
     border-radius: 0.5rem;
     display: inline-block;
     background-color: blue;
+    position: relative;
+    bottom: 5px;
 }
-
-
-
-.parent {
-    border: 0.2rem black dotted;
+.parent{
     display: inline-block;
 }
-#one {
-    background-color: black;
-    width: 100px;
-    height: 30px;
-    position:sticky;
-    top: 20px;
+.box {
+    display: inline-block;
+    border: 0.1rem solid black;
+    border-radius: 4px;
+    width: 40rem;
+    height: 25rem;
+    font-display:unset;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-wrap: wrap;
 }
-#content {
-    width: 300px;
-    height: 400px;
-    background-color: brown;
-    position: absolute;
 
+.footer {
+    height:50px;
+    display: inline-block;
+  line-height:50px;
+  color:black;
+  text-align:center;
+  font-size: 15px;
+  margin-bottom: -180px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding-left: 50px;
+  padding-right: 30px;
 }
