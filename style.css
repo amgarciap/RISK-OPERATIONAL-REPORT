@@ -13,7 +13,20 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
+body{
+    
+    background-color:white;
+    font-size: 1.6rem;
+}
+nav{
+    background-image: url("Imagenes/bg.jpg");
+    height: 8rem;
+}
+p{
+    color: blue;
+    font-family: 'Lucida Sans';
+    font-variant: inherit;
+}
 .brand a {
     display: inline-block;
     width: 20rem;
@@ -22,34 +35,26 @@ img {
     bottom: -10px;
     padding-left: 4rem;
 }
-nav{
-    background-image: url("Imagenes/bg.jpg");
+.main-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
 }
-body{
-    
-    background-color:white;
-    font-size: 1.6rem;
-}
-p{
-    color: blue;
-    font-family: 'Lucida Sans';
-    font-variant: inherit;
-}
-
 .main-nav__item{
     display:inline-block;
-    position: flex;
-    justify-content: flex-end;
-    padding-left: 10rem;
-    bottom: 10rem;
-
+    position: relative;
+    right: 10px;
+    bottom: 80px;
+    padding: .5rem;
 }
 .main-nav__item a{
+    
     color: white;
     background-color: #0e5fa4;
     padding: 1rem;
     border-radius: 1rem;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 .form {
     border-radius: 0.5rem;
