@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANALISIS DE RIESGOS</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="tablet.css"
+        media="screen and (min-width: 600px)"/>
 </head>
 <body>
-
+    
     <main>
 
             <nav>
@@ -20,46 +24,163 @@
                     <li class="main-nav__item"><a href="">Reporte de Aviones</a></li>
                     <li class="main-nav__item"><a href="">P.R.E</a></li>
                 </ul>
-            </nav>  
+            </nav> 
+        <div class="intro">
+            <h1>Analisis de riesgo operacional diario</h1>
+            <p1>El formulario que diligenciará a continuación permitirá establecer medidas de mitigación 
+            para una planificación detallada que permita minimizar los riesgos durante la operación 
+            diaria de las aeronaves</p1>
+        </div>     
+        
+            <section>
+                <div class="principal">
+                    <form action="">
+                        <label for="hk" class="form" id="general">
+                            <span>MATRICULA</span>
+                            <input list="matricula">
+                            <datalist id="matricula">
+                                <option value="HK 3731">HK 3731</option>
+                                <option value="GS 500">GS 500</option>
+                            </datalist>
+                        </label>
+                        <label for="fecha">
+                            <span>FECHA</span>
+                            <input type="datetime-local" name="fecha" required>
+                        </label>
+                        <label for="cliente">
+                            <span>CLIENTE</span>
+                            <input type="text" name="cliente" required>
+                        </label>
+                        <label for="base">
+                            <span>BASE</span>
+                            <input type="text" name="base" required>
+                        </label>
+                        <input type="submit" value="Guardar">
+                    </form>
+                </div>
+                <!--<div class="parent">
+                    <div class="box" id="one"> <img src="Imagenes/MI-8.png"/> MI 171</div>
+                    <div class="box" id="two"> <img src="Imagenes/aeronaves-02.png"/> MI 8 MTV-1</div>
+                    <div class="box" id="three"> <img src="Imagenes/aeronaves-03.png"/> BELL 212</div>
+                </div>-->
+            </section>
+            <section>
+                <div class="01">
+                    <h3>01. Factor Tripulación</h3>
+                    <h4>Piloto</h4>
+                    <form action="">
+                        <label for="fleet_time">
+                            <span>Horas en el equipo</span>
+                            <select name="fleet_time" id="fleet_time">
+                                <option value="100">Menor a 100 horas</option>
+                                <option value="200">Menor a 200 horas</option>
+                                <option value="300">Menor a 300 horas</option>
+                                <option value="500">Menor a 500 horas</option>
+                                <option value="600">Mayor a 500 horas</option>
+                            </select>
+                            <span>Horas totales</span>
+                            <select name="total_time" id="total_time">
+                                <option value="1000">Menor a 1000 horas</option>
+                                <option value="2000">Menor a 2000 horas</option>
+                                <option value="3000">Menor a 3000 horas</option>
+                                <option value="5000">Menor a 5000 horas</option>
+                                <option value="6000">Mayor a 5000 horas</option>
+                            </select>
+                            <span>Tipo de Operación</span>
+                            <select name="operation_type" id="operation_type">
+                                <option value="50">Menor a 50 horas</option>
+                                <option value="100">Menor a 100 horas</option>
+                                <option value="200">Menor a 200 horas</option>
+                                <option value="300">Menor a 300 horas</option>
+                                <option value="500">Mayor a 500 horas</option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <h4>Copiloto</h4>
+                    <form action="">
+                        <label for="fleet_time">
+                            <span>Horas en el equipo</span>
+                            <select name="fleet_time" id="fleet_time">
+                                <option value="100">Menor a 100 horas</option>
+                                <option value="200">Menor a 200 horas</option>
+                                <option value="300">Menor a 300 horas</option>
+                                <option value="500">Menor a 500 horas</option>
+                                <option value="600">Mayor a 500 horas</option>
+                            </select>
+                            <span>Horas totales</span>
+                            <select name="total_time" id="total_time">
+                                <option value="1000">Menor a 1000 horas</option>
+                                <option value="2000">Menor a 2000 horas</option>
+                                <option value="3000">Menor a 3000 horas</option>
+                                <option value="5000">Menor a 5000 horas</option>
+                                <option value="6000">Mayor a 5000 horas</option>
+                            </select>
+                            <span>Tipo de Operación</span>
+                            <select name="operation_type" id="operation_type">
+                                <option value="50">Menor a 50 horas</option>
+                                <option value="100">Menor a 100 horas</option>
+                                <option value="200">Menor a 200 horas</option>
+                                <option value="300">Menor a 300 horas</option>
+                                <option value="500">Mayor a 500 horas</option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+            </section>
 
-        <div>
-        <form action="">
-            <label for="hk" class="form" id="general">
-                <span>MATRICULA</span>
-                <input list="matricula">
-                <datalist id="matricula">
-                    <option value="HK 3731">HK 3731</option>
-                    <option value="GS 500">GS 500</option>
-                </datalist>
-                <!-- <input type="text" name="hk" required> -->
-                <!-- <select name="hk" id="">
-                    <option value="3731">3731</option>
-                    <option value="N5555">5555</option>
-                </select> ESTE SELECT SE USA CUANDO SON POCOS VALORES-->
-            </label>
-            <label for="fecha">
-                <span>FECHA</span>
-                <input type="datetime-local" name="fecha" required>
-            </label>
-            <label for="cliente">
-                <span>CLIENTE</span>
-                <input type="text" name="cliente" required>
-            </label>
-            <label for="base">
-                <span>BASE</span>
-                <input type="text" name="base" required>
-            </label>
-            <input type="submit" value="Guardar">
-        </form>
-    </div>
-    <div class="parent">
-        <div class="box" id="one"> <img src="Imagenes/MI-8.png"/> MI 171</div>
-        <div class="box" id="two"> <img src="Imagenes/aeronaves-02.png"/> MI 8 MTV-1</div>
-        <div class="box" id="three"> <img src="Imagenes/aeronaves-03.png"/> BELL 212</div>
-    </div>
-        <div class="footer"> <img src="Imagenes/LOGO SMS.png">2021 &copy; Dirección de seguridad operacional - Helistar</div>
-    </div>
+            <section>
+                <div class="02">
+                    <h3>02. Factor tipo de Operación</h3>
+                    <span>Operaciones</span>
+                    <select name="operations" id="operations">
+                        <option value="line">Línea Larga / Apoyo Fuerza Pública</option>
+                        <option value="offshore">Off Shore / Spot / Medevac / Sísmica</option>
+                        <option value="external">Carga Externa / Entrenamiento / IFR / Vuelo Mantenimiento</option>
+                        <option value="pax">Transporte de pasajeros</option>
+                        <option value="traslate">Traslado</option>
+                    </select>
+                    <span>Mitiga Entrenamiento</span>
+                    <select name="entto" id="entto">
+
+                    </select>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="03">
+                    <h3>03. Topografía</h3>
+                    <span>Tipo</span>
+                    <select name="flight" id="flight">
+                        <option value="height">Ater.Altura > 10000</option>
+                        <option value="jungle">Selva</option>
+                        <option value="sea">Cordillera / Mar</option>
+                        <option value="mountain">Montaña</option>
+                        <option value="flat">Llano</option>
+            </section>
+
+            <section>
+                <div class="04">
+                    <h3>04. Fatiga</h3>
+                    <span>Vuelo</span>
+                        <select name="type" id="type">
+                            <option value="less_12">Menor a 12</option>
+                            <option value="less_&_12">Menor o igual</option>
+                            <option value="more_12">Mayor a 12</option>
+                            <option value="more_12a">Mayor a 12</option>
+                            <option value="more_12b">Mayor a 12</option>
+                        </select>
+                    </div>
+                    </select>
+                </div>
+            </section>
+
     </main>
-    
+    <footer>
+        <div class="footer"> <img src="Imagenes/LOGO SMS.png">2021 &copy; Dirección de seguridad operacional - Helistar</div>
+    </footer>
+
 </body>
 </html>
