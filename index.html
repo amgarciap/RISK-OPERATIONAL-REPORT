@@ -159,19 +159,35 @@
                         <option value="sea">Cordillera / Mar</option>
                         <option value="mountain">Montaña</option>
                         <option value="flat">Llano</option>
+                    </select>
+                    </div>
             </section>
 
             <section>
                 <div class="04">
                     <h3>04. Fatiga</h3>
-                    <span>Vuelo</span>
-                        <select name="type" id="type">
-                            <option value="less_12">Menor a 12</option>
-                            <option value="less_&_12">Menor o igual</option>
-                            <option value="more_12">Mayor a 12</option>
-                            <option value="more_12a">Mayor a 12</option>
-                            <option value="more_12b">Mayor a 12</option>
+                    <form>
+                        <label for="vuelo">
+                            <span>Vuelo</span>
+                                <select name="days" id="days">
+                                <option value="9">9</option>
+                                <option value="7">7</option>
+                                <option value="5">5</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
                         </select>
+                        </label>
+                    </form>
+                    <form>
+                        <label for="fatiga">
+                            <span>Descanso</span>
+                                <select name="type" id="type">
+                                <option value="less_12">Menor a 12</option>
+                                <option value="less_&_12">Menor o igual</option>
+                                <option value="more_12">Mayor a 12</option>
+                        </select>
+                        </label>
+                    </form>
                     </div>
                     </select>
                 </div>
