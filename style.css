@@ -59,6 +59,17 @@
     margin-left: 20px;
     flex-wrap: wrap;
 }
+
+.crew{
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    width: 300px;
+    border: 0.1rem solid var(--forthdary-color);
+    gap: 16px
+}
+.crew h3{
+
+}
 .footer {
     background-color: var(--primary-color);
     width: 100vw;
@@ -76,3 +87,5 @@
   padding-left: 50px;
   padding-right: 30px;
 }
+
+
