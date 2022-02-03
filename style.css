@@ -1,43 +1,17 @@
 :root{
-    --primary-color: #64aeca;
-    --secundary-color: #0e0a42;
+    --primary-color: #03588C;
+    --secundary-color: #0BADBF;
+    --thirdary-color: #D2D904;
+    --forthdary-color: #0E1426;
     --header-size: 4rem;
     --font:1.8 rem;
 }
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: sans-serif;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-body{
-    
-    background-color:white;
-    font-size: 1.6rem;
-}
-nav{
-    background-image: url("Imagenes/bg.jpg");
-    height: 8rem;
-}
-main{
-    width: 100vw;
-    height: 15vh;
-    font-size: 1.8rem;
-}
 .intro{
     padding: 1rem;
-    display: flex;
+    display: grid;
+    place-items: center;
     text-align: center;
+
 }
 .brand a {
     display: inline-block;
@@ -68,22 +42,13 @@ main{
     text-decoration: none;
     font-size: 1.2rem;
 }
-.form {
-    padding: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border: 0.1rem solid black;
-    border-radius: 0.5rem;
-    display: inline-block;
-    position: relative;
-    bottom: 5px;
-}
+
 .parent{
     display: inline-block;
 }
-/* .box {
+.box {
     display: inline-block;
-    border: 0.1rem solid black;
+    border: 0.1rem solid var(--forthdary-color);
     border-radius: 4px;
     width: 40rem;
     height: 25rem;
@@ -93,8 +58,7 @@ main{
     margin-top: 20px;
     margin-left: 20px;
     flex-wrap: wrap;
-} */
-
+}
 .footer {
     background-color: var(--primary-color);
     width: 100vw;
