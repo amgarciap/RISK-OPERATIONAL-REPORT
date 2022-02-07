@@ -3,6 +3,7 @@
     --secundary-color: #0BADBF;
     --thirdary-color: #D2D904;
     --forthdary-color: #0E1426;
+    --back-color: F5F5F5;
     --header-size: 4rem;
     --font:1.8 rem;
 }
@@ -19,8 +20,10 @@ html {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    justify-content: center;
+    padding-top: 2rem;
+    max-width: 80%;
+    max-height: 80%;
 }
 body{
     

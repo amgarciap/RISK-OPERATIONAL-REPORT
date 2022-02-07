@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análisis de riesgos</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="form.css"/>
     <link rel="stylesheet" href="nav.css"/>
 </head>
 <body>
@@ -13,44 +13,89 @@
         <label for="" class="brand">
             <a href=""><img src="Imagenes/logo helistar vectores.png"></a>
         </label>
-        <ul class="main-nav" id="main-nav">
+        <!-- <ul class="main-nav" id="main-nav">
             <li class="main-nav__item"><a href="">Reporte de Helicópteros</a></li>
             <li class="main-nav__item"><a href="">Reporte de Aviones</a></li>
             <li class="main-nav__item"><a href="">P.R.E</a></li>
-        </ul>
+        </ul> -->
     </nav> 
 
     <main>       
         <div class="general_info">
-            <form action="">
-                <label for="hk" class="form" id="general">
-                    <span>MATRICULA</span>
-                    <input list="matricula">
-                    <datalist id="matricula">
-                        <option value="HK 3731">HK 3731</option>
-                        <option value="GS 500">GS 500</option>
-                    </datalist>
-                </label>
-                <label for="fecha">
-                    <span>FECHA</span>
-                    <input type="datetime-local" name="fecha" required>
-                </label>
-                <label for="cliente">
-                    <span>ORIGEN</span>
-                    <input type="text" name="cliente" required>
-                </label>
-                <label for="base">
-                    <span>DESTINO</span>
-                    <input type="text" name="base" required>
-                </label>
-                <input type="submit" value="Guardar">
-            </form>
+            <div class="form-container">
+                <h1 class="title">Análisis de riesgo para la operación diaria de Helicópteros</h1>
+
+                <form class="info" action="">
+                    <label for="hk" class="form" id="general">
+                        <span>MATRICULA</span>
+                        <input list="matricula">
+                        <datalist id="matricula">
+                            <option value="HK 3731">HK 3731</option>
+                            <option value="GS 500">GS 500</option>
+                        </datalist>
+                    </label>
+                    <label for="fecha">
+                        <span>FECHA</span>
+                        <input type="datetime-local" name="fecha" required>
+                    </label>
+                    <label for="cliente">
+                        <span>ORIGEN</span>
+                        <input type="text" name="cliente" required>
+                    </label>
+                    <label for="base">
+                        <span>DESTINO</span>
+                        <input type="text" name="base" required>
+                    </label>
+                    <input class="button" type="submit" value="Guardar">
+                </form>
             </div>
+            
+        </div>
             <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table-bordered">
+                                <thead>
+                                    <h3>01. Factor Tripulación</h3>
+                                    <caption>Piloto</caption>
+                                    <tr>
+                                        <th scope="col">Horas en el equipo</th>
+                                        <th scope="col">Horas totales</th>
+                                        <th scope="col">Horas de operación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div scope="row" class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                                <label class="custom-control-label" for="customCheck1">Menor a 100 horas</label>
+                                            </div>
+                                        </td>
+                                        <td scope="row">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                                <label class="custom-control-label" for="customCheck2">Menor a 1000 horas</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div scope="row" class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                                <label class="custom-control-label" for="customCheck3">Menor a 50 horas</label>
+                                            </div>
+                                        </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
                 <section class="container" id="crew">
-                    <div class="crew">
-                        <h3>01. Factor Tripulación</h3>
-                        <h4>Piloto</h4>
+                    <div class="row">
+                    
+                        
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
@@ -60,41 +105,31 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <th scope="row">Menor a 100 horas</th>
-                            </tbody>
-                        </table>
-                        <h5>Horas en el equipo</h5>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
-                                Menor a 100 horas
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                                <label class="form-check-label" for="defaultCheck2">
-                                Menor a 200 horas
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                                <label class="form-check-label" for="defaultCheck3">
-                                Menor a 300 horas
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                                <label class="form-check-label" for="defaultCheck4">
-                                Menor a 500 horas
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                                <label class="form-check-label" for="defaultCheck5">
-                                Mayor a 500 horas
-                                </label>
-                            </div>
+                                <div class="container">
+                                    <div class="row mb-3">
+                                        <tr>
+                                            <td><input class="col" type="checkbox" name="brand">Menor a 100 horas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="brand">Menor a 200 horas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="brand">Menor a 300 horas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="brand">Menor a 500 horas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="brand">Mayor a 500 horas</td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+                                    </div>
+                                </div>
+                                
+                        
+                    </div>
     
                         <h5>Horas Totales</h5>
                             </div>
@@ -587,6 +622,22 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </section>
+            
+            <div class="personel">
+                <h3 class=title_personel>Turno de trabajo</h3>
+                    <form>
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="First name">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name">
+                          </div>
+                        </div>
+                      </form>
+                      
+                </div>
+            </div>
         </main>
         </div>
 

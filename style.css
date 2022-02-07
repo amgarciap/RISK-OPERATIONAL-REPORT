@@ -3,6 +3,7 @@
     --secundary-color: #0BADBF;
     --thirdary-color: #D2D904;
     --forthdary-color: #0E1426;
+    --back-color: #949494;
     --header-size: 4rem;
     --font:1.8 rem;
 }
@@ -59,17 +60,10 @@
     margin-left: 20px;
     flex-wrap: wrap;
 }
-
-.crew{
-    display: grid;
-    grid-template-rows: auto 1fr auto auto;
-    width: 300px;
-    border: 0.1rem solid var(--forthdary-color);
-    gap: 16px
+.box :hover {
+    background-color: var(--back-color);
 }
-.crew h3{
 
-}
 .footer {
     background-color: var(--primary-color);
     width: 100vw;
