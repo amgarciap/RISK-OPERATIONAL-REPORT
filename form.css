@@ -50,10 +50,11 @@ th{
     color:white;
 }
 td,th{
-    border: 2px solid var(--primary-color);
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    border: 1px solid var(--primary-color);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    justify-content: center;
 }
 
