@@ -18,14 +18,20 @@ html {
     font-size: 62.5%;
     font-family: sans-serif;
 }
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 .code {
     display: flex;
     justify-items: center;
 }
 .title {
-    display: grid;
+    display: flex;
     place-items: center;
+    justify-items: flex-end;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -50,13 +56,7 @@ h3 {
 .info{
     padding-top: 1.5rem;
 }
-.button{
-    background-color: var(--primary-color);
-    justify-content: center;
-    font-size: 1rem;
-    font-style: white;
-    border-radius: 0.5rem;
-}
+
 table{
     margin-top: 5rem;
     caption-side: top;

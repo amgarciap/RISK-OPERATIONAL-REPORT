@@ -6,6 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <style>
+        :root{
+            --primary-color: #03588C;
+            --secundary-color: #0BADBF;
+            --thirdary-color: #D2D904;
+            --forthdary-color: #0E1426;
+            --back-color: #949494;
+            --header-size: 4rem;
+            --font:1.8 rem;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin:0;
+            font-family: helvetica;
+        }
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form_login {
+           display: flex;
+           flex-direction: column;
+           width: 500px; 
+        }
+        .logo {
+            width: 150px;
+            height: 120px;
+            display: flex;
+            justify-self: center;
+        }
+        h3 {
+            display: flex;
+            justify-items: start;
+            padding-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: var(--md);
+            font-weight: bold;
+            margin-bottom: 0,4rem;
+            padding-top: 0,4rem;
+
+        }
+        input {
+            background-color: var(--back-color);
+            border: solid var(--primary-color);
+            border-radius: 1rem;
+            height: 4rem;
+            font-size: var(--md);
+            padding: 2rem;
+            margin-bottom: 12px;
+            margin-top: 12px;
+        }
+        .primary-button {
+            background-color: var(--secundary-color);
+            border-radius: 8px;
+            border: none;
+            color: white;
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--lg);
+            font-weight: bold;
+            height: 60px;
+        }
+
+        .primary-button {
+            margin-top: 14px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 640){
+            .logo {
+                display: block;
+            }
+            .form_login {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                width: 300px;
+            }
+        }
 
 
     </style>
@@ -21,7 +108,7 @@
 
     <div class="login">
         <div class="form_login">
-            <img src="" alt="logo" class="logo">
+            <img src="./Imagenes/logo_sms.png" alt="logo" class="logo">
             
             <h2 class="title">Personal de vuelo</h2>
             <p class="subtitle">Registros del personal involucrado en el vuelo</p>
@@ -37,9 +124,7 @@
                 <input type="email" id="email" placeholder="piloto@helistaraviacion.com" class="input input-id">
 
                 <label for="shift" class="label">Número de días turno de trabajo</label>
-                <input type="number" id="shift" placeholder="Dias laborados en el turno" class="input input-id">
-
-                <input type="submit" value="Guardar" class="primary-button login-button">
+                <input type="number" id="shift" placeholder="Dias laborados" class="input input-id">
             </form>
 
             <h3>Copiloto</h3>
@@ -54,9 +139,7 @@
                 <input type="email" id="email" placeholder="copiloto@helistaraviacion.com" class="input input-id">
 
                 <label for="shift" class="label">Número de días turno de trabajo</label>
-                <input type="number" id="shift" placeholder="Dias laborados en el turno" class="input input-id">
-
-                <input type="submit" value="Guardar" class="primary-button login-button">
+                <input type="number" id="shift" placeholder="Dias laborados" class="input input-id">
             </form>
 
             <h3>Ingeniero de Vuelo</h3>
@@ -71,9 +154,8 @@
                 <input type="email" id="email" placeholder="ingvuelo@helistaraviacion.com" class="input input-id">
 
                 <label for="shift" class="label">Número de días turno de trabajo</label>
-                <input type="number" id="shift" placeholder="Dias laborados en el turno" class="input input-id">
+                <input type="number" id="shift" placeholder="Dias laborados" class="input input-id">
 
-                <input type="submit" value="Guardar" class="primary-button login-button">
             </form>
 
             <h3>Técnico</h3>
@@ -88,9 +170,8 @@
                 <input type="email" id="email" placeholder="técnico@helistaraviacion.com" class="input input-id">
 
                 <label for="shift" class="label">Número de días turno de trabajo</label>
-                <input type="number" id="shift" placeholder="Dias laborados en el turno" class="input input-id">
+                <input type="number" id="shift" placeholder="Dias laborados" class="input input-id">
 
-                <input type="submit" value="Guardar" class="primary-button login-button">
             </form>
 
             <h3>Load Master</h3>
@@ -105,9 +186,8 @@
                 <input type="email" id="email" placeholder="load@helistaraviacion.com" class="input input-id">
 
                 <label for="shift" class="label">Número de días turno de trabajo</label>
-                <input type="number" id="shift" placeholder="Dias laborados en el turno" class="input input-id">
+                <input type="number" id="shift" placeholder="Dias laborados" class="input input-id">
 
-                <input type="submit" value="Guardar" class="primary-button login-button">
             </form>
 
             <h3>Despachador</h3>
@@ -122,7 +202,7 @@
                 <input type="email" id="email" placeholder="dispatch@helistaraviacion.com" class="input input-id">
 
                 <label for="shift" class="label">Número de días turno de trabajo</label>
-                <input type="number" id="shift" placeholder="Dias laborados en el turno" class="input input-id">
+                <input type="number" id="shift" placeholder="Dias laborados" class="input input-id">
 
                 <input type="submit" value="Guardar" class="primary-button login-button">
             </form>
